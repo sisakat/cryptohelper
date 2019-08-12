@@ -126,7 +126,7 @@ namespace Sisak.CryptoHelper
             }
 
             string encryptedContent = CryptoHelper.EncryptText(obj, password);
-            _vaultObjects.Add(name, obj);
+            _vaultObjects.Add(name, encryptedContent);
         }
 
         public void RemoveObject(string name)
